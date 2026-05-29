@@ -1,9 +1,9 @@
 name: AxentHost Auto Claim v2
 
 on:
-  # 每 30 分钟测试一次，确认 schedule 正常
+  # 每小时测试一次
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "0 * * * *"
   # 手动触发
   workflow_dispatch:
 
